@@ -164,16 +164,17 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 45%;
     right: 0;
-    background: rgba(242, 240, 234, 0.95);
+    background: rgba(242, 240, 234, 0.218);
     backdrop-filter: blur(20px);
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px 0 20px 20px;
     padding: 1rem 0;
     transform: translateY(-100%);
     opacity: 0;
     transition: all 0.3s var(--ease-smooth);
     z-index: 999;
+    width : 200px ;
 }
 
 .mobile-dropdown.open {
@@ -206,9 +207,9 @@
     }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 350px) {
     .container {
-        max-width: 400px;
+        max-width: 340px;
     }
 }
 

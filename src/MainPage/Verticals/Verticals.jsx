@@ -15,7 +15,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/Beauty and Cosmetics.jpg" />
+                                        <img src="/assets/Vertical/Beauty and Cosmetics.jpg" />
                                     </div>
                                     <h3>Beauty & Cosmetics</h3>
                                     <div className="member-badge">6 Members</div>
@@ -34,7 +34,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/construction1.jpg" />
+                                        <img src="/assets/Vertical/construction1.jpg" />
                                     </div>
                                     <h3></h3>
                                     <h3>Construction Professionals</h3>
@@ -54,7 +54,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/Constructionjpg.jpg" />
+                                        <img src="/assets/Vertical/Constructionjpg.jpg" />
                                     </div>
                                     <h3>Construction Services</h3>
                                     <div className="member-badge">18 Members</div>
@@ -72,7 +72,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/digital.jpg" />
+                                        <img src="/assets/Vertical/digital.jpg" />
                                     </div>
                                     <h3>Digital Marketing</h3>
                                     <div className="member-badge">5 Members</div>
@@ -90,7 +90,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/photo.jpg" />
+                                        <img src="/assets/Vertical/photo.jpg" />
                                     </div>
                                     <h3>Events & Photography</h3>
                                     <div className="member-badge">6 Members</div>
@@ -110,7 +110,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/finance.jpg" />
+                                        <img src="/assets/Vertical/finance.jpg" />
                                     </div>
                                     <h3>Financial Services</h3>
                                     <div className="member-badge">10 Members</div>
@@ -128,7 +128,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/food.jpg" />
+                                        <img src="/assets/Vertical/food.jpg" />
                                     </div>
                                     <h3>Food & Restaurants</h3>
                                     <div className="member-badge">9 Members</div>
@@ -146,7 +146,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/glass furniture.jpg" />
+                                        <img src="/assets/Vertical/glass furniture.jpg" />
                                     </div>
                                     <h3>Glass & Furniture</h3>
                                     <div className="member-badge">6 Members</div>
@@ -164,7 +164,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/health.jpg" />
+                                        <img src="/assets/Vertical/health.jpg" />
                                     </div>
                                     <h3>Health & Related Services</h3>
                                     <div className="member-badge">7 Members</div>
@@ -182,7 +182,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/interior.jpg" />
+                                        <img src="/assets/Vertical/interior.jpg" />
                                     </div>
                                     <h3>Interior Services</h3>
                                     <div className="member-badge">9 Members</div>
@@ -200,7 +200,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/printers.jpg" />
+                                        <img src="/assets/Vertical/printers.jpg" />
                                     </div>
                                     <h3>Printers & Publications</h3>
                                     <div className="member-badge">3 Members</div>
@@ -219,7 +219,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/retail.jpg" />
+                                        <img src="/assets/Vertical/retail.jpg" />
                                     </div>
                                     <h3>Retail Business</h3>
                                     <div className="member-badge">26 Members</div>
@@ -238,7 +238,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/services.jpg" />
+                                        <img src="/assets/Vertical/services.jpg" />
                                     </div>
                                     <h3>Services</h3>
                                     <div className="member-badge">11 Members</div>
@@ -257,7 +257,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/solar.jpg" />
+                                        <img src="/assets/Vertical/solar.jpg" />
                                     </div>
                                     <h3>Solar, UPS & RO</h3>
                                     <div className="member-badge">6 Members</div>
@@ -276,7 +276,7 @@ function Verticals() {
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     <div className="vertical-image">
-                                        <img src="/src/assets/Vertical/textile.jpg" />
+                                        <img src="/assets/Vertical/textile.jpg" />
                                     </div>
                                     <h3>Textile</h3>
                                     <div className="member-badge">11 Members</div>

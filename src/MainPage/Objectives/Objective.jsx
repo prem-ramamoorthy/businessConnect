@@ -8,7 +8,7 @@ function Objective() {
 
                 <div className="objectives-container">
                     <div className="objectives-image">
-                        <img src="/src/assets/img2.jpg" alt="Community Objectives Illustration" />
+                        <img src="/assets/img2.jpg" alt="Community Objectives Illustration" />
                     </div>
 
                     <div className="objectives-grid">

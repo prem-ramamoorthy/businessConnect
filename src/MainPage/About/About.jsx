@@ -18,7 +18,7 @@ function About() {
                             <p className="en">We strive to support the community's progress and prosperity through comprehensive social and economic development programs</p>
                         </div>
                         <div className="timeline-image">
-                            <img src="src/assets/vision.jpg" alt="Our Vision" />
+                            <img src="/assets/vision.jpg" alt="Our Vision" />
                         </div>
                     </div>
                     <div className="timeline-item-container">
@@ -32,7 +32,7 @@ function About() {
                                 strong relationship bonds.</p>
                         </div>
                         <div className="timeline-image">
-                            <img src="src/assets/mission.jpg" alt="Our Mission" />
+                            <img src="/assets/mission.jpg" alt="Our Mission" />
                         </div>
                     </div>
                 </div>

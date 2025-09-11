@@ -15,7 +15,7 @@ function Leaders() {
                         <div className="new-leader-card new-premium-card">
                             <div className="new-card-glow"></div>
                             <div className="new-leader-avatar">
-                                <img src="/src/assets/JPEG/yogibalu.jpg" alt="image" height="100px" width="200px" />
+                                <img src="/assets/JPEG/yogibalu.jpg" alt="image" height="100px" width="200px" />
                             </div>
                             <div className="new-leader-info">
                                 <div className="new-position">President</div>
@@ -30,7 +30,7 @@ function Leaders() {
                         <div className="new-leader-card new-premium-card">
                             <div className="new-card-glow"></div>
                             <div className="new-leader-avatar">
-                                <img src="/src/assets/JPEG/144.jpg" alt="image" height="100px" width="200px" />
+                                <img src="/assets/JPEG/144.jpg" alt="image" height="100px" width="200px" />
                             </div>
                             <div className="new-leader-info">
                                 <div className="new-position">Vice President</div>
@@ -45,7 +45,7 @@ function Leaders() {
                         <div className="new-leader-card new-premium-card">
                             <div className="new-card-glow"></div>
                             <div className="new-leader-avatar">
-                                <img src="/src/assets/JPEG/Rajkumar.jpg" alt="image" height="100px" width="200px" />
+                                <img src="/assets/JPEG/Rajkumar.jpg" alt="image" height="100px" width="200px" />
                             </div>
                             <div className="new-leader-info">
                                 <div className="new-position">Secretary</div>
@@ -60,7 +60,7 @@ function Leaders() {
                         <div className="new-leader-card new-premium-card">
                             <div className="new-card-glow"></div>
                             <div className="new-leader-avatar">
-                                <img src="/src/assets/JPEG/142.jpg" alt="image" height="100px" width="200px" />
+                                <img src="/assets/JPEG/142.jpg" alt="image" height="100px" width="200px" />
                             </div>
                             <div className="new-leader-info">
                                 <div className="new-position">Treasurer</div>
@@ -75,7 +75,7 @@ function Leaders() {
                         <div className="new-leader-card new-premium-card">
                             <div className="new-card-glow"></div>
                             <div className="new-leader-avatar">
-                                <img src="/src/assets/JPEG/54.jpg" alt="image" height="100px" width="200px" />
+                                <img src="/assets/JPEG/54.jpg" alt="image" height="100px" width="200px" />
                             </div>
                             <div className="new-leader-info">
                                 <div className="new-position">Coordinator</div>
@@ -90,7 +90,7 @@ function Leaders() {
                         <div className="new-leader-card new-premium-card">
                             <div className="new-card-glow"></div>
                             <div className="new-leader-avatar">
-                                <img src="/src/assets/JPEG/19.jpg" alt="image" height="100px" width="200px" />
+                                <img src="/assets/JPEG/19.jpg" alt="image" height="100px" width="200px" />
                             </div>
                             <div className="new-leader-info">
                                 <div className="new-position">Coordinator</div>
@@ -105,7 +105,7 @@ function Leaders() {
                         <div className="new-leader-card new-premium-card">
                             <div className="new-card-glow"></div>
                             <div className="new-leader-avatar">
-                                <img src="/src/assets/JPEG/101.jpg" alt="image" height="100px" width="200px" />
+                                <img src="/assets/JPEG/101.jpg" alt="image" height="100px" width="200px" />
                             </div>
                             <div className="new-leader-info">
                                 <div className="new-position">Coordinator</div>
@@ -120,7 +120,7 @@ function Leaders() {
                         <div className="new-leader-card new-premium-card">
                             <div className="new-card-glow"></div>
                             <div className="new-leader-avatar">
-                                <img src="/src/assets/JPEG/62.jpg" alt="image" height="100px" width="200px" />
+                                <img src="/assets/JPEG/62.jpg" alt="image" height="100px" width="200px" />
                             </div>
                             <div className="new-leader-info">
                                 <div className="new-position">Coordinator</div>
@@ -135,7 +135,7 @@ function Leaders() {
                         <div className="new-leader-card new-premium-card">
                             <div className="new-card-glow"></div>
                             <div className="new-leader-avatar">
-                                <img src="/src/assets/JPEG/27.jpg" alt="image" height="100px" width="200px" />
+                                <img src="/assets/JPEG/27.jpg" alt="image" height="100px" width="200px" />
                             </div>
                             <div className="new-leader-info">
                                 <div className="new-position">Coordinator</div>

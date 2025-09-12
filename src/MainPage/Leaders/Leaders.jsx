@@ -4,7 +4,7 @@ function Leaders() {
     return (
         <div className="led">
             <section id="leadership" className="leadership">
-                <div className="section-bg parallax-bg"></div>
+                {/* <div className="section-bg parallax-bg"></div> */}
                 <div className="container">
                     <div className="section-header">
                         <div className="section-tag">Leaders and Coordinators</div>

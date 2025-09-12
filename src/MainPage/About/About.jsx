@@ -10,7 +10,7 @@ function About() {
                     <p className="section-subtitle">Building bridges between tradition and innovation in business excellence</p>
                 </div>
                 <div className="about-content">
-                    <div className="timeline-item-container">
+                    <div className="timeline-item-container" style={{width : "100px !important"}}>
                         <div className="timeline-item">
                             <h3>குறிக்கோள் (Vision)</h3>
                             <p className="tamil">நமது சமுதாய மக்கள், சமூக ரீதியாகவும், பொருளாதார ரீதியாகவும் முன்னேற

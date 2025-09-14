@@ -268,3 +268,8 @@
         max-height: 55px;
     }
 }
+
+.burger-menu {
+        position: relative;
+        left: -10%;
+}

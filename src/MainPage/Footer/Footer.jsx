@@ -1,6 +1,18 @@
 import './FooterStyle.css'
+import HeaderLinks from '../../Components/HeaderLinks'
+import data from '../../data/MainPage/FooterSocialLinks.json'
 
 function Footer() {
+
+    const socialComponent = data.map((social, index) => {
+        return (
+            <a href={social.link} className="social-link" target="_blank" key={index}>
+                <span className="social-icon">{social.emoji}</span>
+                <span>{social.name}</span>
+            </a>
+        )
+    });
+
     return (
         <div className="fot">
             <div className="member">
@@ -28,28 +40,13 @@ function Footer() {
                                 </div>
                                 <p>Empowering Business Excellence Through Unity</p>
                                 <div className="social-links">
-                                    <a href="#" className="social-link" target="_blank">
-                                        <span className="social-icon">📘</span>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a href="#" className="social-link" target="_blank">
-                                        <span className="social-icon">💼</span>
-                                        <span>LinkedIn</span>
-                                    </a>
-                                    <a href="#" className="social-link" target="_blank">
-                                        <span className="social-icon">🐦</span>
-                                        <span>Twitter</span>
-                                    </a>
+                                    {socialComponent}
                                 </div>
                             </div>
                             <div className="footer-section">
                                 <h4>Quick Links</h4>
                                 <div className="footer-links">
-                                    <a href="/index.html#home" className="footer-link">Home</a>
-                                    <a href="/index.html#about" className="footer-link">About Us</a>
-                                    <a href="/index.html#verticals" className="footer-link">Business Verticals</a>
-                                    <a href="/index.html#leadership" className="footer-link">Leadership Team</a>
-                                    <a href="/index.html#contact" className="footer-link">Contact Us</a>
+                                    <HeaderLinks classname='footer-link' />
                                 </div>
                             </div>
                             <div className="footer-section">

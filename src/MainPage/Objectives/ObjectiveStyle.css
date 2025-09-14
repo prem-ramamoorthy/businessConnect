@@ -90,7 +90,6 @@
     cursor: pointer;
     transition: transform var(--transition-0-3s) ease, box-shadow var(--transition-0-3s) ease;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 32px;
-
 }
 
 .objective .objective-card:hover {

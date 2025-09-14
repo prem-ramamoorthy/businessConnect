@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './HeaderStyle.css';
+import HeaderLinks from '../../Components/HeaderLinks.jsx';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,12 +28,7 @@ function Header() {
                     </div>
 
                     <div className="nav-menu desktop-menu">
-                        <a href="#home" className="nav-link" data-text="Home">Home</a>
-                        <a href="/members/index.html" className="nav-link" data-text="Members">Members</a>
-                        <a href="#about" className="nav-link" data-text="About">About</a>
-                        <a href="#verticals" className="nav-link" data-text="Business Verticals">Business Verticals</a>
-                        <a href="#leadership" className="nav-link" data-text="Leadership">Leadership</a>
-                        <a href="#contact" className="nav-link" data-text="Contact">Contact</a>
+                        <HeaderLinks classname="nav-link" />
                     </div>
 
                     <div className="burger-menu" onClick={toggleMenu}>
@@ -42,12 +38,7 @@ function Header() {
                     </div>
 
                     <div className={`mobile-dropdown ${isMenuOpen ? 'open' : ''}`}>
-                        <a href="#home" className="mobile-nav-link" onClick={toggleMenu}>Home</a>
-                        <a href="/members/index.html" className="mobile-nav-link" onClick={toggleMenu}>Members</a>
-                        <a href="#about" className="mobile-nav-link" onClick={toggleMenu}>About</a>
-                        <a href="#verticals" className="mobile-nav-link" onClick={toggleMenu}>Business Verticals</a>
-                        <a href="#leadership" className="mobile-nav-link" onClick={toggleMenu}>Leadership</a>
-                        <a href="#contact" className="mobile-nav-link" onClick={toggleMenu}>Contact</a>
+                        <HeaderLinks onClick={toggleMenu} classname={"mobile-nav-link"} />
                     </div>
                 </div>
             </nav>

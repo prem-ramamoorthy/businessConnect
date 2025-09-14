@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './HeroStyle.css'
+import data from '../../data/MainPage/HeroStats.json'
 
 function Hero() {
     const statsRef = useRef(null);
@@ -9,15 +10,15 @@ function Hero() {
     useEffect(() => {
         const setupTypewriterEffect = () => {
             const typewriterElements = document.querySelectorAll('.hero .animate-typewriter');
-            
+
             typewriterElements.forEach((element, index) => {
                 const text = element.getAttribute('data-text') || element.textContent;
                 const delay = parseInt(element.getAttribute('data-delay')) || index * 1000;
-                
+
                 element.textContent = '';
                 element.style.width = '0';
                 element.style.borderRight = '2px solid var(--warm-gold)';
-                
+
                 setTimeout(() => {
                     typeWriter(element, text, 30);
                 }, delay);
@@ -28,7 +29,7 @@ function Hero() {
             let i = 0;
             element.style.width = 'auto';
             element.style.display = 'inline-block';
-            
+
             const timer = setInterval(() => {
                 if (i < text.length) {
                     element.textContent += text.charAt(i);
@@ -47,26 +48,26 @@ function Hero() {
             counters.forEach(counter => {
                 const target = parseInt(counter.getAttribute('data-count')) || parseInt(counter.textContent);
                 if (isNaN(target)) return;
-                
+
                 const duration = 2500;
                 const startTime = performance.now();
-                
+
                 const animate = (currentTime) => {
                     const elapsed = currentTime - startTime;
                     const progress = Math.min(elapsed / duration, 1);
-                    
+
                     const easeOutQuart = 1 - Math.pow(1 - progress, 4);
                     const current = Math.floor(target * easeOutQuart);
-                    
+
                     counter.textContent = current;
-                    
+
                     if (progress < 1) {
                         requestAnimationFrame(animate);
                     } else {
                         counter.textContent = target;
                     }
                 };
-                
+
                 requestAnimationFrame(animate);
             });
         };
@@ -75,11 +76,11 @@ function Hero() {
             entries.forEach(entry => {
                 if (entry.isIntersecting && !isAnimatedRef.current) {
                     isAnimatedRef.current = true;
-                    
+
                     setTimeout(() => {
                         setupTypewriterEffect();
                     }, 500);
-                    
+
                     setTimeout(() => {
                         animateCounters('.hero .stat-number');
                     }, 20);
@@ -101,8 +102,26 @@ function Hero() {
         };
     }, []);
 
+    const renderButtons = () => {
+        return data.buttons.map((button, index) => (
+            <button key={index} className={`btn btn-${button.type}`}>
+                <span>{button.name}</span>
+                <div className="btn-glow">{button.content}</div>
+            </button>
+        ));
+    };
+
+    const renderStats = () => {
+        return data.stats.map((stat, index) => (
+            <div key={index} className="stat-item"> 
+                <span className="stat-number" data-count={stat.value}>0</span>
+                <span className="stat-label">{stat.name}</span>
+            </div>
+        ));
+    };
+
     return (
-        <section id="home" className="hero" style={{marginTop: '-40px'}}>
+        <section id="home" className="hero" style={{ marginTop: '-40px' }}>
             <div className="hero-bg">
                 <div className="hero-particles"></div>
                 <div className="hero-shapes">
@@ -128,32 +147,10 @@ function Hero() {
                         Building a strong network of successful entrepreneurs and business leaders within the Sengunthar community across diverse industries
                     </p>
                     <div className="hero-actions animate-fade-up" data-delay="3000">
-                        <button className="btn btn-primary ripple-btn" >
-                            <span>Discover More</span>
-                            <div className="btn-glow"></div>
-                        </button>
-                        <button className="btn btn-secondary magnetic-btn" >
-                            <span>Connect With Us</span>
-                            <div className="btn-arrow">→</div>
-                        </button>
+                        {renderButtons()}
                     </div>
                     <div className="hero-stats animate-fade-up" data-delay="3500" ref={statsRef}>
-                        <div className="stat-item">
-                            <span className="stat-number" data-count="139">0</span>
-                            <span className="stat-label">Members</span>
-                        </div>
-                        <div className="stat-item">
-                            <span className="stat-number" data-count="218253123">0</span>
-                            <span className="stat-label">Business</span>
-                        </div>
-                        <div className="stat-item">
-                            <span className="stat-number" data-count="1520">0</span>
-                            <span className="stat-label">Referrals</span>
-                        </div>
-                        <div className="stat-item">
-                            <span className="stat-number" data-count="15">0</span>
-                            <span className="stat-label">Verticals</span>
-                        </div>
+                        {renderStats()}
                     </div>
                 </div>
             </div>

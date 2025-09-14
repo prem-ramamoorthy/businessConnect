@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './ContactStyle.css'
 
 function Contact() {
   const [result, setResult] = useState("");
@@ -54,7 +55,7 @@ function Contact() {
               <div className="contact-icon" aria-hidden="true">📍</div>
               <a
                 href="https://maps.app.goo.gl/oQvWDiGHgVvDCnvWA?g_st=ipc"
-                className="contact-details"
+                className="location"
                 target="_blank"
                 rel="noopener noreferrer"
               >

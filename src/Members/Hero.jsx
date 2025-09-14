@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
     return (
-        <div className="container">
+        <div className="container" id = "hero">
             <div className="member">
                     <div className="header-content">
                         <h1 className="page-title">Our Members Directory</h1>

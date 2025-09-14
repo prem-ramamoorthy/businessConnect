@@ -21,7 +21,7 @@
 }
 
 .section-tag {
-    background: linear-gradient(135deg, var(--warm-gold) 0%, #D4B896 100%);;
+    background: linear-gradient(135deg, var(--warm-gold) 0%, #D4B896 100%);
     color: #ffffff;
     padding: 0.3rem 1rem;
     border-radius: 999px;

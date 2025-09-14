@@ -10,7 +10,7 @@ function Members() {
         <Header isMembers = {true} style = {{background :  "rgba(0, 0, 0, 0.07)"}} />   
         <Hero />
         <Main />
-        <Footer margin = {"-7"}/>
+        <Footer margin = {"-7"} ismember={true}/>
     </>
   )
 }

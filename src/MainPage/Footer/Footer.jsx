@@ -2,7 +2,7 @@ import './FooterStyle.css'
 import HeaderLinks from '../../Components/HeaderLinks'
 import data from '../../data/MainPage/FooterSocialLinks.json'
 
-function Footer({margin = "auto"}) {
+function Footer({margin = "auto" , ismember = false}) {
 
     const socialComponent = data.map((social, index) => {
         return (
@@ -46,7 +46,7 @@ function Footer({margin = "auto"}) {
                             <div className="footer-section">
                                 <h4>Quick Links</h4>
                                 <div className="footer-links">
-                                    <HeaderLinks classname='footer-link' />
+                                    <HeaderLinks classname='footer-link' memfooter = {ismember}/>
                                 </div>
                             </div>
                             <div className="footer-section">

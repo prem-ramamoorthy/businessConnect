@@ -1,32 +1,78 @@
 import data from '/src/data/MainPage/HeaderLinks.json';
+import { NavLink } from 'react-router-dom';
 
-function HeaderLinks({ onClick = null, classname = "", ismembers = false }) {
+function HeaderLinks({ onClick = null, classname = "", ismembers = false, memfooter = false }) {
+
+  if (memfooter) {
+    const footerComponent = data.map((link, index) => {
+      if (link.name === "Members") {
+        return (
+          <a
+            key={index}
+            href={"#hero"}
+            className={classname}
+            data-text={link.name}
+            onClick={onClick}
+          >
+            {link.name}
+          </a>
+        )
+      }
+      else {
+        return (<NavLink
+          key={index}
+          to={`/${link.url}`}
+          className={classname}
+          data-text={link.name}
+          onClick={onClick}
+        >
+          {link.name}
+        </NavLink>)
+      }
+    });
+    return footerComponent ;
+  }
 
   if (ismembers) {
     return <>
-      <a
+      <NavLink
         key={1}
-        href={data[0].url}
+        to={"/"}
         className={classname}
         data-text={data[0].name}
         onClick={onClick}
       >
         {data[0].name}
-      </a>
+      </NavLink>
     </>
   }
 
-  const HeaderComponent = data.map((link, index) => (
-    <a
-      key={index}
-      href={link.url}
-      className={classname}
-      data-text={link.name}
-      onClick={onClick}
-    >
-      {link.name}
-    </a>
-  ));
+  const HeaderComponent = data.map((link, index) => {
+    if (link.name === "Members") {
+      return (
+        <NavLink
+          key={index}
+          to={link.url}
+          className={classname}
+          data-text={link.name}
+          onClick={onClick}
+        >
+          {link.name}
+        </NavLink>
+      )
+    }
+    else {
+      return (<a
+        key={index}
+        href={link.url}
+        className={classname}
+        data-text={link.name}
+        onClick={onClick}
+      >
+        {link.name}
+      </a>)
+    }
+  });
 
   return <>{HeaderComponent}</>;
 }

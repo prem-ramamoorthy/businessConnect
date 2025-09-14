@@ -1,7 +1,7 @@
 [
     {
         "name": "Home",
-        "url": "/home"
+        "url": "#home"
     },
     {
         "name": "Members",
@@ -9,18 +9,18 @@
     },
     {
         "name": "About",
-        "url": "/about"
+        "url": "#about"
     },
     {
         "name": "Business Verticals",
-        "url": "/verticals"
+        "url": "#verticals"
     },
     {
         "name": "Leadership",
-        "url": "/leadership"
+        "url": "#leadership"
     },
     {
         "name": "Contact",
-        "url": "/contact"
+        "url": "#contact"
     }
 ]

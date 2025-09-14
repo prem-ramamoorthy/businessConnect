@@ -2,7 +2,7 @@ import './FooterStyle.css'
 import HeaderLinks from '../../Components/HeaderLinks'
 import data from '../../data/MainPage/FooterSocialLinks.json'
 
-function Footer() {
+function Footer({margin = "auto"}) {
 
     const socialComponent = data.map((social, index) => {
         return (
@@ -27,7 +27,7 @@ function Footer() {
                                             <img src="/logo.png" alt="Sengunthar in Business Logo" className="logo-image"
                                                 style={{
                                                     display: 'block',
-                                                    marginLeft: 'auto',
+                                                    marginLeft:  `${margin}`,
                                                     marginRight: 'auto',
                                                     maxWidth: '65px',
                                                     maxHeight: '65px',

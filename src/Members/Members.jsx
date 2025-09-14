@@ -1,10 +1,21 @@
 import Header from '../MainPage/Header/Header.jsx'
 import Footer from '../MainPage/Footer/Footer.jsx'
-import './style.css'
 import Hero from './Hero.jsx'
 import Main from './Main.jsx'
+import { useEffect } from 'react'
 
 function Members() {
+
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/src/Members/style.css';
+    document.head.appendChild(link);
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
+
   return (
     <>
         <Header isMembers = {true} style = {{background :  "rgba(0, 0, 0, 0.07)"}} />   

@@ -321,6 +321,7 @@
   .hero {
     min-height: 100vh;
     padding: 2rem 0;
+    margin-left: -8%;
   }
 
   .hero .hero-content {

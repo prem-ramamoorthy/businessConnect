@@ -37,8 +37,6 @@
 }
 
 .hed .container {
-    width: 100%;
-    max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -201,18 +199,6 @@
 
 .hed .mobile-nav-link:last-child {
     border-bottom: none;
-}
-
-@media (min-width: 640px) {
-    .hed .container {
-        max-width: var(--container-sm);
-    }
-}
-
-@media (min-width: 350px) {
-    .hed .container {
-        max-width: 340px;
-    }
 }
 
 @media (min-width: 768px) {

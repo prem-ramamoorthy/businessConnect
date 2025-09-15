@@ -50,15 +50,15 @@ function HeaderLinks({ onClick = null, classname = "", ismembers = false, memfoo
   const HeaderComponent = data.map((link, index) => {
     if (link.name === "Members") {
       return (
-        <a
+        <NavLink
           key={index}
-          href={link.url}
+          to={link.url}
           className={classname}
           data-text={link.name}
           onClick={onClick}
         >
           {link.name}
-        </a>
+        </NavLink>
       )
     }
     else {
@@ -66,7 +66,7 @@ function HeaderLinks({ onClick = null, classname = "", ismembers = false, memfoo
         key={index}
         href={link.url}
         className={classname}
-        data-text={link.name}
+        data-text={link.name}z
         onClick={onClick}
       >
         {link.name}

@@ -9,7 +9,7 @@ function Members() {
   useEffect(() => {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '/src/Members/style.css';
+    link.href = '/style.css';
     document.head.appendChild(link);
     return () => {
       document.head.removeChild(link);
